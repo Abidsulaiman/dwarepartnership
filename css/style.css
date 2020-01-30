@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800|Open+Sans|Roboto:500,700&display=swap');
+
+*{
+    outline: none;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #374249;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.v-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe{
+    border-radius: 4px;
+}
+
+section{
+    padding: 50px 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    color: #102338;
+}
+
+/*bg*/
+.bg-dark{
+    background: #050c13 !important;
+}
+
+.bg-trans{
+    background: transparent;
+}
+
+/*btn*/
+.btn{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 40px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+.btn-sm{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 35px;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-image: linear-gradient(210deg, #f7a000 35%, #f44129 100%);
+    box-shadow: 0px 11px 25px -11px rgba(244,36,0,0.5);
+    border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    box-shadow: 0px 11px 25px -11px rgba(244,36,0,0.5);
+}
+
+/*text*/
+.font-weight-bold{
+    font-weight: 600!important;
+}
+
+.display-4{
+    font-size: 2.5rem;
+}
+
+/*form*/
+.form-control{
+    font-size: 14px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f5631a;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgba(245, 94, 29, 0.21);
+}
+.form-check-input {
+    margin-right: 10px;
+}
+/*navbar*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 40px 15px 40px;
+    height: 60px;
+    position: relative;
+    z-index: 9999;
+}
+
+/*header*/
+header{
+    background-image: linear-gradient(320deg, rgb(28, 28, 28) 0%, rgb(0, 63, 109) 100%);
+    position: relative;
+    padding: 50px 0;
+}
+
+.bg-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/headerbg.svg") no-repeat center center;
+    background-size: cover;
+}
+
+/*list*/
+ul li{
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/*team*/
+#team img{
+    border-radius: 4px;
+    box-shadow: 0px 11px 25px -11px rgba(0,0,0,0.5);
+}
+
+
+
+/*packages*/
+
+#packages ul{
+    padding-left: 23px;
+}
+#packages ul li{
+    font-size: 14px;
+    color: #495057;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+#packages ul li:last-child{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*modal*/
+.close {
+    opacity: 1;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 99999;
+}
+.modal-backdrop.show {
+    opacity: .95;
+}
+
+
+@media (min-width: 576px){
+    .modal-sm {
+        max-width: 380px;
+    }
+}
